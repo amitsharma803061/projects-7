@@ -4,11 +4,12 @@ import TicketCard from './TicketCard';
 import TicketItems from './TicketItems';
 import { Check } from 'lucide-react';
 import ResolvedCard from './ResolvedCard';
+import { toast } from 'react-toastify';
 
 const TicketContainer = ({ promise }) => {
     const data = use(promise)
     // console.log(ticket);
-    const [ticket, setTicket] = useState(data);
+    const [tickets, setTickets] = useState(data);
 
     const [ticketItems, setTicketItems] = useState([]); 
 
@@ -16,7 +17,7 @@ const TicketContainer = ({ promise }) => {
 
 
     const handleTicket = (ticket) => {
-        console.log(ticket)
+        toast.success("In-Progress Success")
         // Age check koro tarpor ticket dekhao jeno akta card 2 bar na jete pare
         const isExist = ticketItems.find((item) => item.id == ticket.id);
         if (isExist) {
@@ -31,7 +32,6 @@ const TicketContainer = ({ promise }) => {
 
 
      const handleResolved = (ticket) => {
-        console.log(ticket)
         // ticket items ke click kore ticket ke tusk a dhukabo
         const newTaskItems = [...taskItems, ticket];
         setTaskItems(newTaskItems); 
@@ -41,8 +41,8 @@ const TicketContainer = ({ promise }) => {
         setTicketItems(remaining);
 
         // in-progress theke card gula ke remove kore deo jkhn complete button a chap porbe
-        const newRemaining = ticket.filter((item) => item.id !== ticket.id);
-        setTicket(newRemaining);
+        const newRemaining = tickets.filter((item) => item.id !== ticket.id);
+        setTickets(newRemaining);
     };
 
 
@@ -59,7 +59,7 @@ const TicketContainer = ({ promise }) => {
                     <div className="md:col-span-9 grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-5">
 
                         {
-                            ticket.map((ticket) => (<TicketCard handleTicket={handleTicket} key={ticket.id} ticket={ticket}></TicketCard>))
+                            tickets.map((ticket) => (<TicketCard handleTicket={handleTicket} key={ticket.id} ticket={ticket}></TicketCard>))
                         }
                     </div>
                     <div className="md:col-span-3 ">

@@ -4,6 +4,7 @@ import './App.css'
 import Banner from './assets/components/CodeFile/Banner'
 import Navbar from './assets/components/CodeFile/Navbar'
 import TicketContainer from './assets/components/TicketContainer';
+import { ToastContainer } from 'react-toastify/unstyled';
 
 
 const loadTicket = () => fetch("/tickets.json")
@@ -21,6 +22,7 @@ function App() {
           <TicketContainer promise={ticketPromise}></TicketContainer>
         </Suspense>
       </section>
+      <ToastContainer></ToastContainer>
     </>
   )
 }
