@@ -11,17 +11,17 @@ const TicketContainer = ({ promise }) => {
     // console.log(ticket);
     const [tickets, setTickets] = useState(data);
 
-    const [ticketItems, setTicketItems] = useState([]); 
+    const [ticketItems, setTicketItems] = useState([]);
 
     const [taskItems, setTaskItems] = useState([]);
 
 
     const handleTicket = (ticket) => {
-        toast.success("In-Progress Success")
+        toast.success("In-Progress in success")
         // Age check koro tarpor ticket dekhao jeno akta card 2 bar na jete pare
         const isExist = ticketItems.find((item) => item.id == ticket.id);
         if (isExist) {
-            alert("Complete button!!");
+            toast.success("All ready in-progress")
             return;
         }
 
@@ -31,10 +31,12 @@ const TicketContainer = ({ promise }) => {
     };
 
 
-     const handleResolved = (ticket) => {
+    const handleResolved = (ticket) => {
+        toast.success("In-progress complete")
+
         // ticket items ke click kore ticket ke tusk a dhukabo
         const newTaskItems = [...taskItems, ticket];
-        setTaskItems(newTaskItems); 
+        setTaskItems(newTaskItems);
 
         // Complete card ke sorai dibo
         const remaining = ticketItems.filter((item) => item.id !== ticket.id);
