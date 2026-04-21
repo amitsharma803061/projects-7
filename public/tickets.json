@@ -1,0 +1,128 @@
+[
+  {
+    "id": "TKT-1001",
+    "title": "Database Connection Timeout",
+    "description": "Production database intermittently dropping connections during peak hours.",
+    "customer": "TechCorp Solutions",
+    "priority": "CRITICAL PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2026-04-15T09:30:00Z"
+  },
+  {
+    "id": "TKT-1002",
+    "title": "UI Alignment Fix",
+    "description": "Login button overlapping with footer on mobile devices.",
+    "customer": "Global Retail Inc",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-04-16T14:15:22Z"
+  },
+  {
+    "id": "TKT-1003",
+    "title": "New Feature Request: Dark Mode",
+    "description": "Customer requested a native dark mode toggle for the dashboard.",
+    "customer": "Starlight Ventures",
+    "priority": "LOW PRIORITY",
+    "status": "Backlog",
+    "createdAt": "2026-04-17T11:05:10Z"
+  },
+  {
+    "id": "TKT-1004",
+    "title": "Password Reset Email Delay",
+    "description": "Users reporting 10-minute delay in receiving recovery emails.",
+    "customer": "SecureBank",
+    "priority": "HIGH PRIORITY",
+    "status": "Resolved",
+    "createdAt": "2026-04-18T08:45:00Z"
+  },
+  {
+    "id": "TKT-1005",
+    "title": "API Rate Limiting Issues",
+    "description": "Third-party integrations are hitting 429 errors prematurely.",
+    "customer": "DataStream Co",
+    "priority": "HIGH PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2026-04-18T10:00:00Z"
+  },
+  {
+    "id": "TKT-1006",
+    "title": "Broken Link in Documentation",
+    "description": "The 'Getting Started' guide points to a 404 page.",
+    "customer": "EduLearn",
+    "priority": "LOW PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-04-18T11:20:00Z"
+  },
+  {
+    "id": "TKT-1007",
+    "title": "Memory Leak in Background Worker",
+    "description": "Worker processes consuming 100% RAM after 4 hours of uptime.",
+    "customer": "CloudSystems",
+    "priority": "CRITICAL PRIORITY",
+    "status": "Investigation",
+    "createdAt": "2026-04-18T12:15:45Z"
+  },
+  {
+    "id": "TKT-1008",
+    "title": "Update SSL Certificates",
+    "description": "The certificate for staging-api.example.com expires in 3 days.",
+    "customer": "Internal",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-04-18T13:05:00Z"
+  },
+  {
+    "id": "TKT-1009",
+    "title": "CSV Export Formatting",
+    "description": "Dates in the CSV export are not following ISO 8601.",
+    "customer": "FinTrack",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Backlog",
+    "createdAt": "2026-04-18T14:40:00Z"
+  },
+  {
+    "id": "TKT-1010",
+    "title": "Billing Dashboard Error",
+    "description": "Users see a blank page when clicking on 'Invoices'.",
+    "customer": "BlueSky Marketing",
+    "priority": "HIGH PRIORITY",
+    "status": "Open",
+    "createdAt": "2026-04-18T15:10:00Z"
+  },
+  {
+    "id": "TKT-1011",
+    "title": "Search Index Re-indexing",
+    "description": "New products are not appearing in search results for up to 1 hour.",
+    "customer": "ShopSwift",
+    "priority": "MEDIUM PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2026-04-18T15:30:00Z"
+  },
+  {
+    "id": "TKT-1012",
+    "title": "Typo in Terms of Service",
+    "description": "Correction needed for clause 4.2 regarding data privacy.",
+    "customer": "LegalDept",
+    "priority": "LOW PRIORITY",
+    "status": "Resolved",
+    "createdAt": "2026-04-18T16:00:00Z"
+  },
+  {
+    "id": "TKT-1013",
+    "title": "SSO Login Failure",
+    "description": "SAML assertion failing for Okta-integrated users.",
+    "customer": "EnterpriseOne",
+    "priority": "CRITICAL PRIORITY",
+    "status": "In Progress",
+    "createdAt": "2026-04-18T16:45:00Z"
+  },
+  {
+    "id": "TKT-1014",
+    "title": "Increase File Upload Limit",
+    "description": "Request to increase max file size from 10MB to 50MB.",
+    "customer": "MediaHouse",
+    "priority": "MEDIUM PRIORITY",
+    "status": "Backlog",
+    "createdAt": "2026-04-18T17:15:00Z"
+  }
+]
