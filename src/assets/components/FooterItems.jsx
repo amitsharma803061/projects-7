@@ -2,7 +2,7 @@ import React from 'react';
 
 const FooterItems = () => {
     return (
-        <div className="bg-[#030000] w-full h-250 md:h-80">
+        <div className="bg-[#030000] w-full h-260 md:h-100">
 
             <div className="w-11/12 mx-auto py-10 grid grid-cols-1 md:grid-cols-5 space-y-5 text-white">
                 <div className="space-y-3">
@@ -37,11 +37,15 @@ const FooterItems = () => {
                     <h2 className="text-2xl font-semibold">Social Links</h2>
                     <ol className="space-y-3 text-gray-500">
                         <ol className="flex gap-2"><img src="/public/group_x.png" alt="" />@CS -- Ticket System</ol>
-                        <ol>@CS -- Ticket System</ol>
-                        <ol>@CS -- Ticket System</ol>
-                        <ol>support@cst.com</ol>
+                        <ol className="flex gap-2"><img src="/public/group_im.png" alt="" />@CS -- Ticket System</ol>
+                        <ol className="flex gap-2"><img src="/public/group_f.png" alt="" />@CS -- Ticket System</ol>
+                        <ol className="flex gap-2"><img src="/public/Group_m.png" alt="" />support@cst.com</ol>
                     </ol>
                 </div>
+            </div>
+
+            <div className="text-center mt-10 border-t border-gray-600 w-full my-4">
+                <h2 className="text-gray-400 pt-5">© 2025 CS — Ticket System. All rights reserved.</h2>
             </div>
 
         </div>

@@ -17,11 +17,11 @@ const TicketContainer = ({ promise }) => {
 
 
     const handleTicket = (ticket) => {
-        
+        toast.success("In-progress success")
         // Age check koro tarpor ticket dekhao jeno akta card 2 bar na jete pare
         const isExist = ticketItems.find((item) => item.id == ticket.id);
         if (isExist) {
-            toast.success("In-progress success")
+            toast.warning("Warning")
             return;
         }
 
