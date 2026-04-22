@@ -5,6 +5,8 @@ import Banner from './assets/components/CodeFile/Banner'
 import Navbar from './assets/components/CodeFile/Navbar'
 import TicketContainer from './assets/components/TicketContainer';
 import { ToastContainer } from "react-toastify";
+import FooterItems from './assets/components/FooterItems';
+
 
 
 const loadTicket = () => fetch("/tickets.json")
@@ -23,6 +25,10 @@ function App() {
         </Suspense>
       </section>
       <ToastContainer></ToastContainer>
+
+      <section>
+        <FooterItems></FooterItems>
+      </section>
     </>
   )
 }

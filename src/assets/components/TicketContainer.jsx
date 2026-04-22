@@ -17,11 +17,11 @@ const TicketContainer = ({ promise }) => {
 
 
     const handleTicket = (ticket) => {
-        toast.success("In-Progress in success")
+        
         // Age check koro tarpor ticket dekhao jeno akta card 2 bar na jete pare
         const isExist = ticketItems.find((item) => item.id == ticket.id);
         if (isExist) {
-            toast.success("All ready in-progress")
+            toast.success("In-progress success")
             return;
         }
 
@@ -32,7 +32,7 @@ const TicketContainer = ({ promise }) => {
 
 
     const handleResolved = (ticket) => {
-        toast.success("In-progress complete")
+        toast.success("Resolved Complete")
 
         // ticket items ke click kore ticket ke tusk a dhukabo
         const newTaskItems = [...taskItems, ticket];
